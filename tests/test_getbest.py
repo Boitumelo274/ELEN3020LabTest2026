@@ -28,7 +28,7 @@ from getbest import getCols, findTop
 
 class TestGetBest(unittest.TestCase):
 
-    def setUp(self):
+    def setup(self):
         
         # creating in-memory fake CSV data for unit testing
     
@@ -41,7 +41,7 @@ class TestGetBest(unittest.TestCase):
             "ELEN3020,191919,73,-\n"
         )
 
-    def test_getColumns(self):
+    def test-getcolumns(self):
 
         # Test if correct column indexes are detected
         num_cols, mark_cols = getCols(self.data)
@@ -49,7 +49,7 @@ class TestGetBest(unittest.TestCase):
         self.assertEqual(mark_cols, 2) # Mark column
 
     
-    def test_find_the_top(self):
+    def test_find_the__top(self):
         #Reset file pointer to start of StringIO object
         #because getCols() already moved it forward
         self.data.seek(0)
@@ -62,7 +62,7 @@ class TestGetBest(unittest.TestCase):
         self.assertEqual(best, 90) # highest mark
 
 
-if __name__ == "__main__":
+if __name__ == "___main___"::
     unittest.main()
 
 os.remove(dummy_file) # This clean up temporary files after tests finish
