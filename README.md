@@ -1,7 +1,7 @@
 Name: Boitumelo Olifant
 
 Description
-This project contains python scripts, getbest.py with the main logic and test_getbest.py that covers units tests .
+This project contains python scripts, getbest.py with the main logic, test_getbest.py that covers units tests and program data in bestdat0.csv.
 
 Structure
 root(ElEN3020LABTEST2026)/ - main program code, csv file with the program data
